@@ -1,0 +1,996 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;700&display=swap');
+
+:root {
+    --background-color: #2699FB;
+    --text-color: #fff;
+    --industry-bg: rgba(238, 51, 48, 1);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksands', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.navbar {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo a {
+    font-weight: bold;
+    color: #030303;
+    font-size: 20px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 30px;
+    position: relative;
+}
+ .menu a {
+    color: #030303;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+ }
+
+ .menu li:not(:last-child) a::after {
+   content: '/';
+   margin-left: 5px;
+   
+ }
+
+ .menu a:hover {
+    color: #EE3330;
+    transition: 0.3s ease;
+ }
+
+ .icons {
+    display: flex;
+    align-items: center;
+
+    .top-social-icons a {
+      width: 50px;
+      height: 50px;
+   }
+   .top-social-icons img {
+      margin-right: 10px;
+      width: 35px;
+      height: 35px;
+      background-color: red;
+      padding: 8px 8px;
+      border-radius: 3px;
+   }
+
+   .top-social-icons a:hover img {
+      background-color: #030303;
+   }
+ }
+
+.contacts a{
+   color: #030303;
+}
+
+.contacts-email:hover a,
+.tele:hover a {
+   color: #EE3330;
+}
+
+ .contacts-email {
+   margin: 10px 0;
+ }
+
+ input[type=checkbox]  {
+    display: none;
+ }
+
+ .hamburger,
+ .industry-hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+ }
+
+/*MAIN-BANNER IMAGE*/
+
+ .banner {
+    background-image: url(images/main-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    height: 80vh; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+
+ }
+
+ /*START INDUSTRIES SECTION CSS*/
+
+ /*INDUSTRIES BANNER SECTION*/
+
+ .industry-navbar {
+   display: flex;
+   align-items: center;
+   background-color: var(--industry-bg);
+   padding: 30px 0;
+ }
+
+.industry-menu {
+   display: flex;
+   padding-left: 80px;
+}
+
+.industry-title h1 {
+   color: #fff;
+   text-transform: uppercase;
+   font-size: 20px;
+   line-height: 28px;
+   font-family: 'Quicksand', Courier, monospace;
+   padding-left: 40px;
+}
+
+.industry-menu a {
+   color: var(--text-color);
+   text-transform: uppercase;
+}
+
+.industry-menu a:hover {
+   color: black;
+}
+
+.industry-menu li:not(:last-child) {
+   margin-right: 20px;
+}
+
+.industry-menu li:not(:last-child) a::after {
+   content: '/';
+   margin-left: 5px;
+   
+ }
+
+ .industries-banner {
+   background-image: url(images/banner-2.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   max-width: 100%;
+   height: 80vh; 
+   display: flex; 
+   align-items: center;
+   justify-content: center;
+
+}
+
+/*RESIDENTILA SECTION*/
+.residential {
+   display: grid;
+   grid-template-columns: 30% 70%;
+   gap: 10px;
+   padding: 40px 20px;
+   background-color: #003057;
+}
+
+.resi-col1 {
+   text-align: center;
+
+   .resi-title h2 {
+      color: var(--text-color);
+      text-transform: uppercase;
+      font-size: 20px;
+      font-family: 'Quicksand', sans-serif;
+   }
+
+   img {
+      width: 80px;
+      height: 80px;
+   }
+
+}
+.resi-col2 {
+   color: #fff;
+   font-size: 16px;
+   font-family: 'Quicksand', sans-serif;
+   line-height: 24px;
+}
+
+/*MINING SECTION*/
+.mining-row {
+   background-image: url(images/nature-banner.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   max-width: 100%;
+   height: 80vh; 
+   display: flex; 
+   align-items: center;
+   justify-content: center;
+}
+
+.mining-row {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-auto-rows: minmax(300px, auto);
+}
+
+.mining-title h3{
+   color: var(--text-color);
+   font-family: 'Quicksand', sans-serif;
+   line-height: 18px;
+   text-transform: uppercase;
+   margin-bottom: 20px;
+}
+.mining-text p {
+   color: var(--text-color);
+   font-family: 'Quicksand', sans-serif;
+   line-height: 28px;
+   font-size: 16px;
+  
+}
+.mining-section {
+   background-color: #EE3330;
+   height: 100%;
+   clip-path: polygon(0% 0%, 75% 0%, 100% 25%, 100% 100%, 0% 100%);
+   padding: 70px 50px;
+   overflow: hidden;
+}
+
+/*INDUSTRIAL SECTION*/
+.industrial {
+   display: grid;
+   grid-template-columns: 30% 70%;
+   gap: 10px;
+   padding: 40px 20px;
+   background-color: #FFFFFF;
+}
+
+.industry-col1 {
+   text-align: center;
+
+   .industry-title h2 {
+      color: #030303;
+      text-transform: uppercase;
+      font-size: 20px;
+      font-family: 'Quicksand', sans-serif;
+   }
+
+   img {
+      width: 80px;
+      height: 80px;
+   }
+
+}
+.industry-col2 p{
+   color: #030303;
+   font-size: 16px;
+   font-family: 'Quicksand', sans-serif;
+   line-height: 24px;
+}
+
+/*COMMERCIAL SECTION*/
+.commercial-row {
+   background-image: url(images/nature-banner.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   max-width: 100%;
+   height: 80vh; 
+   display: flex; 
+   align-items: center;
+   justify-content: center;
+}
+
+.commercial-row {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.commercial-title h3{
+   color: var(--text-color);
+   font-family: 'Quicksand', sans-serif;
+   line-height: 18px;
+   text-transform: uppercase;
+   margin-bottom: 20px;
+}
+.commercial-text p {
+   color: var(--text-color);
+   font-family: 'Quicksand', sans-serif;
+   line-height: 28px;
+   font-size: 16px;
+  
+}
+.commercial-section {
+   background-color: #003057;
+   height: 100%;
+   clip-path: polygon(0% 0%, 75% 0%, 100% 25%, 100% 100%, 0% 100%);
+   padding: 70px 50px;
+   overflow: hidden;
+}
+
+
+/*WAREHOUSING*/
+.warehousing {
+   display: grid;
+   grid-template-columns: 30% 70%;
+   gap: 10px;
+   padding: 40px 20px;
+   background-color: #FFFFFF;
+}
+
+.warehousing-col1 {
+   text-align: center;
+
+   .warehousing-title h2 {
+      color: #030303;
+      text-transform: uppercase;
+      font-size: 20px;
+      font-family: 'Quicksand', sans-serif;
+   }
+
+   img {
+      width: 80px;
+      height: 80px;
+   }
+
+}
+.warehousing-col2 p{
+   color: #030303;
+   font-size: 16px;
+   font-family: 'Quicksand', sans-serif;
+   line-height: 24px;
+}
+
+/*BANNER MENU*/
+.banner-menu {
+   display: flex;
+   align-items: center;
+   gap: 50px;
+   background-color: #EE3330;
+   padding: 30px 40px;
+}
+
+.banner-menu-links{
+   display: flex;
+   align-items: center;
+   gap: 15px;
+}
+
+.banner-menu-links a{
+   color: var(--text-color);
+   text-transform: uppercase;
+   font-size: 16px;
+   font-family: 'Quicksand', sans-serif;
+}
+
+.banner-menu-links a:hover {
+   color: #030303;
+}
+
+.banner-menu-logo h1{
+   color: var(--text-color);
+   text-transform: uppercase;
+   font-size: 24px;
+   font-family: 'Quicksand', sans-serif;
+}
+
+.banner-menu-links li:not(:last-child) a::after {
+   content: '/';
+   margin-left: 8px;
+}
+
+/*END INDUSTRIAL STYLING*/
+
+
+ /* MAIN CONTENT SECTION */
+
+ .main-content p{
+    padding: 20px 20px;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 24px;
+ }
+
+ /* ICONS SECTION */
+
+ .home-icons .about-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+ }
+ .home-icon-title {
+    padding-left: 15px;
+    color: #EE3330;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+ }
+
+ .our-profile a img,
+ .our-people a img,
+ .accreditation a img {
+    transition: 0.4s ease-in-out;
+}
+
+.our-profile a:hover img,
+.our-people a:hover img,
+.accreditation a:hover img {
+   transform: scale(1.1);
+}
+
+.our-profile a:hover .home-icon-title,
+.our-people a:hover .home-icon-title,
+.accreditation a:hover .home-icon-title {
+    color: #000; 
+    transition: color 0.3s ease-out; 
+}
+ .our-profile a,
+ .our-people a,
+ .accreditation a{
+    display: flex;
+    align-items: center;
+ }
+ .about-icons {
+    margin-top: 30px;
+ }
+
+
+ /*SERVICES SECTION*/
+ .services-grid {
+   display: grid;
+   margin-top: 50px;
+   position: relative;
+ }
+
+ .service-title h2{
+    color: var(--text-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 35px;
+ }
+
+ .services1-section img{
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   width: 100%;
+   height: 100%;
+ }
+
+ .services2-section {
+    background-color: #EE3330;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+
+ }
+
+ .services-categories .category1 a,
+ .services-categories .category2 a,
+ .services-categories .category3 a {
+    display: flex;
+    align-items: center;  
+ }
+
+ .services-categories {
+    margin-top: 30px;
+
+     a{
+        margin-bottom: 30px;
+        color: var(--text-color);
+        text-transform: uppercase;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 20px;
+    }
+    img {
+        margin-right: 20px;
+    }
+ }
+
+ .services-categories a img {
+    transition: 0.4s ease-in-out;
+ }
+
+ .services-categories a:hover img {
+    transform: scale(1.1);
+ }
+
+ .services-categories a:hover {
+   color: #030303;
+ }
+
+
+ /*OUR VALUES SECTION*/
+
+ .our-values {
+   background-color: #003057;
+   display: grid;
+   gap: 20px;
+   padding: 80px 60px;
+   height: auto;
+
+   .title {
+      color: var(--text-color);
+      font-family: 'Quicksand', sans-serif;
+      font-size: 20px; 
+      line-height: 28px; 
+
+      text-transform: uppercase;
+      margin-bottom: 15px;
+   }
+
+   p {
+      color: var(--text-color);
+      font-family: 'Quicksand', sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+   }
+ } 
+
+ .col-values2 hr, 
+ .col-values3 hr,
+ .col-values4 hr ,
+ .col-values5 hr {
+   border: none; 
+   border-top: 2px solid white; 
+   margin: 10px 0; 
+}
+
+.col-values1 {
+   img {
+      display: block;
+      width: 65px;
+     margin-left: 50px;
+   }
+
+.values-title {
+   text-align: left;
+   text-transform: uppercase;
+   font-family: 'Quicksand', sans-serif;
+   font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: var(--text-color);
+    padding-top: 20px;
+}
+}
+
+/*Academy*/
+
+.our-academy {
+   display: grid;
+}
+.academy-col1 {
+   background-color: #EE3330;
+   padding: 30px 30px;
+}
+
+.academy-col2 img{
+   background-size: cover; 
+   background-position: center; 
+   background-repeat: no-repeat;
+   width: 100%;
+   height: 100%;
+}
+
+.academy-title {
+   color: var(--text-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Quicksand", sans-serif;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.academy-col1 p{
+   color: var(--text-color);
+   font-family: "Quicksand", sans-serif;
+   font-size: 16px;
+   line-height: 24px;
+}
+
+/*NEWS SECTION */
+
+.top-section {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 30px 30px;
+
+   .read-all a{
+      display: flex;
+      align-items: center;
+   }
+}
+
+.read-all .readall-bttn {
+   color: #EE3330;
+   text-transform: uppercase;
+   margin-left: 10px;
+}
+
+.read-all a img {
+   transition: 0.4s ease-in-out;
+}
+
+.read-all a:hover img {
+   transform: scale(1.1);
+}
+
+.read-all a:hover .readall-bttn {
+   color: #030303;
+}
+
+#news-section {
+   background-color: #E6E7E8;
+   padding: 30px 20px;
+}
+
+.top-section {
+   .top-title {
+      color: #EE3330;
+      text-transform: uppercase;
+      font-family: "Quicksand", sans-serif;
+      font-size: 20px;
+   }
+}
+
+.news-card {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 16px;
+
+   .card-logo {
+     text-align: center;
+   }
+
+   .card-logo a img {
+      transition: 0.4s ease-in-out;
+   }
+
+   .card-logo a:hover img {
+      transform: scale(1.1);
+   }
+  
+   .card1 {
+      background-color: #fff;
+      padding: 20px 20px;
+   }
+
+   .card-title {
+      text-transform: uppercase;
+      color: #EE3330;
+      font-family: "Quicksand", sans-serif;
+      font-size: 20px;
+   }
+}
+.card-title hr {
+   border: none;
+   border: 1px solid #030303;
+   margin: 10px 0;
+}
+
+.card-time-date {
+   color: #7D8597;
+   font-family: "Quicksand", sans-serif;
+   font-size: 16px;
+}
+.card1 .card-content .card-paragraph {
+   color: #030303;
+   font-family: "Quicksand", sans-serif;
+   font-size: 16px;
+   padding: 20px 0;
+}
+
+.card-readmore a{
+   display: flex;
+   align-items: center;
+}
+
+.card-readmore .readmore-title {
+   color: #EE3330;
+   text-transform: uppercase;
+   font-family: "Quicksand", sans-serif;
+   font-size: 16px;
+   margin-left: 10px;
+}
+
+.card-readmore a:hover .readmore-title {
+   color: #030303;
+}
+
+.card-readmore a img {
+   transition: 0.3s ease-out;
+}
+
+.card-readmore a:hover img {
+   transform: scale(1.1);
+}
+
+
+/*PARTNERS*/
+.our-partners {
+   display: grid;
+   padding: 30px 50px;
+   grid-template-columns: repeat(2, 1fr);
+   align-items: center;
+}
+
+.partners-title h3 {
+   color: #EE3330;
+   text-transform: uppercase;
+   font-family: 'Quicksand', sans-serif;
+   line-height: 24px;
+   font-size: 30px;
+}
+
+.partners-logo img{
+   width: 150px;
+   height: 150px;
+   margin-right: 20px;
+}
+
+.partners-logo {
+   margin-left: auto;
+}
+
+/*FOOTER*/
+
+.footer-section {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   padding: 30px 30px;
+   background-color: #003057;
+   align-items: center;
+}
+.developers h2 a{
+   color: var(--text-color);
+   text-transform: uppercase;
+   font-family: 'Quicksand', sans-serif;
+}
+
+.footer-icons {
+   margin-left: auto;
+   display: flex;
+   align-items: center;
+
+   .company-logo {
+      margin-left: 30px;
+   }
+
+   .social-icons a {
+      width: 50px;
+      height: 50px;
+   }
+   .social-icons img {
+      margin-right: 10px;
+      width: 40px;
+      height: 40px;
+      background-color: #fff;
+      padding: 10px 10px;
+      border-radius: 3px;
+   }
+
+   .social-icons a:hover img {
+      background-color: #EE3330;
+   }
+
+}
+
+
+ /*MOBILE VIEW */
+
+ @media only screen and (max-width: 768px) {
+    .menu,
+    .industry-menu {
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        background-color: #22232347;
+        padding: 16px 20px;
+        border: 1px solid #030303;
+        max-width: 90%;
+        margin: auto;
+        top: 25%;
+    }
+    .menu a,
+    .industyr-menu a {
+        display: block;
+        margin-bottom: 10px; 
+        color: var(--text-color);
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+    .menu li:not(:last-child) a::after,
+    .industry-menu li:not(:last-child) a::after {
+      content: '/';
+      display: none;
+      
+    }
+
+    .icons {
+        display: block;
+    }
+
+    .hamburger,
+    .industry-hamburger {
+        display: block;
+        color: #030303;
+    }
+
+    input[type=checkbox]:checked ~ .menu {
+        display: block;
+    }
+
+    .home-icons .about-icons {
+      display: grid;      
+   }
+
+    .services-grid, .our-academy {
+      grid-template-columns: 1fr;
+    }
+    
+    .our-values {
+      grid-template-columns: 1fr;
+      padding: 30px 20px;
+    }
+    .our-partners {
+      grid-template-columns: 1fr;
+      text-align: center;
+   }
+
+   .news-card {
+      grid-template-columns: 1fr;
+   }
+
+   .read-all {
+    display: none;
+   }
+   .footer-section {
+      grid-template-columns: 1fr;
+      align-items: flex-end;
+
+      .developers h2{
+         text-align: center;
+      }
+   }
+
+   .footer-icons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+   .residential {
+      grid-template-columns: 1fr;
+      gap: 20px;
+   }
+
+   .mining-row {
+      grid-template-columns: 1fr;
+      height: auto;
+      row-gap: 300px;
+      
+    }
+
+    .mining-section {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0% 38%);
+    
+   }
+
+   .commercial-section {
+      clip-path: polygon(0% 0%, 100% 0%, 100% 25%, 100% 100%, 0% 100%);
+   }
+   .commercial-row {
+      grid-template-columns: 1fr;
+      height: auto;
+      row-gap: 500px;
+    }
+
+
+   .industrial {
+      grid-template-columns: 1fr;
+      gap: 10px;
+   }
+   .warehousing {
+      grid-template-columns: 1fr;
+   }
+
+ }
+
+ /*TABLET VIEW*/
+
+@media only screen and (min-width: 769px) {
+   .menu {
+      gap: 5px;
+      margin-left: 0;
+  }
+
+  .our-values {
+   grid-template-columns: repeat(2, 1fr);
+  }
+  .services-grid, .our-academy {
+   grid-template-columns: 1fr;
+ }
+
+ .our-partners {
+   text-align: center;
+}
+   .mining-row {
+      grid-template-columns: 1fr;
+      height: auto;
+      row-gap: 200px;
+      
+    }
+
+    .mining-section {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0% 38%);
+    
+   }
+   .commercial-section {
+      clip-path: polygon(0% 0%, 100% 0%, 100% 25%, 100% 100%, 0% 100%);
+   }
+   .commercial-row {
+      grid-template-columns: 1fr;
+      height: auto;
+      row-gap: 500px;
+    }
+}
+
+/*DESKTOP VIEW AND LARGE SCREENS*/
+ @media only screen and (min-width: 1024px) {
+   .services-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .our-values {
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    .our-academy {
+      grid-template-columns: repeat(2, 1fr); 
+   }
+
+   .our-partners {
+      grid-template-columns: repeat(2, 1fr);
+   }
+   .mining-section {
+      clip-path: polygon(0% 0%, 75% 0%, 100% 25%, 100% 100%, 0% 100%);
+   }
+   .mining-row {
+      grid-template-columns: 60% 40%;
+    }
+    .commercial-row {
+      grid-template-columns: 40% 60%;
+    }
+    .commercial-section {
+      clip-path: polygon(0% 0%, 75% 0%, 100% 25%, 100% 100%, 0% 100%);
+   }
+
+ }
